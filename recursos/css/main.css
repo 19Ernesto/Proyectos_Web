@@ -1,0 +1,167 @@
+	
+/*  PALETA DE COLORES
+Rosa: #C6426E
+Morado:#642B73
+Negro: #000
+Gris: #F5F5F5
+Oro: #CE9D64
+Verde opaco: #439775
+azul acino: #758BFD
+verde turquesa: #B5DFCA;
+amarillo : #ffc400;
+
+*/
+/*
+
+*/
+html{ /*Modelado de tipografia sitio web*/
+	font-family: 'Poppins', sans-serif;
+}
+.container { /*Modelado degradado de sitio web index*/
+background: #283c86;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+ a {
+ 	text-decoration: none;
+ 	color: #758BFD;
+ }
+
+ img{ /*Tamaño maximo de las imagenes*/
+	max-width: 100%;
+ }
+
+ .title{ /*modelado de titulo en index*/
+ 	text-transform: uppercase;
+ 	text-align: center;
+ }
+
+ .paragraph{ /*modelado de parrafos*/
+ 	line-height: 1.6em;
+ 	font-weight: 300;
+ 	text-align: justify;
+ }
+
+ .fa-star, .fa-star-half{ /*Modelado color calificación estrellas 
+ 	*/
+ 	color:#ffc400;
+ }
+
+
+ td{
+	display: block;
+}
+td:nth-of-type(1){
+	font-size: 1.2em;
+	font-weight: bold;
+	color:#45a247;
+}
+th{
+	display: none;
+}
+
+.content{ /*modelado de contenido en tabla*/
+	max-width: 960px;
+	width: 100%;
+	height: 80vh;
+	background-color: #fff;
+	border-radius: 5px;
+	position: relative;
+	padding: 1.8em;
+	overflow: scroll;
+	
+}
+
+.action{/*modelado de boton X*/
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+.close{
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background: #45a247;
+  cursor: pointer;
+  font-weight: 400;
+  box-shadow: 3px 3px 5px #283c86;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table{
+	width: 100%;
+	border-spacing: 0;
+}
+
+.table td, table th{
+	padding: 1em;
+	text-align: center;
+}
+
+.table tr:nth-child(even){background-color: #B5DFCA}
+
+.title-item{
+	border-bottom: #45a247 solid 2px;
+	padding-bottom: 1em;
+	font-size: 2em;
+}
+
+.address{
+	font-weight: bold;
+	color: #45a247;
+	font-size: 1.2em;
+	margin-top: 2em;
+	display: inline-block;
+}
+
+.main-images{
+	float: left;
+	margin-right: 1em;
+	height: 275px;
+	width: 380px;
+}
+
+.position{
+	background-color: #45a247;	
+	color: white;
+	padding: 0.1em;
+	border-radius: 4px;
+	margin-right: 0.5em;
+}
+
+a:hover {
+  color: #283c86
+}
+a:focus{
+	background: #ffc400;
+}
+
+@media (min-width: 900px) {
+	th{
+		display: table-cell;
+	}
+	td{
+		width: auto;
+		display: table-cell;
+	}
+	td:nth-of-type(1){
+		font-size: 1em;
+	}
+	.content{
+    padding: 1em;
+  }
+}
+	
+@media (min-height:550px) {
+	.content{
+    height: 500px;
+}
+}
